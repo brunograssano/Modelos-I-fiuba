@@ -1,0 +1,29 @@
+#Datos
+data;
+
+set proyectos := N E;
+
+param cantidadDesarrolladores := 48;
+param disponibilidadConexiones := 75;
+param disponibilidadAnchoDeBanda := 100;
+param disponibilidadMemoriaRam := 500;
+param disponibilidadEspacioDisco := 200;
+param diasHabilesPorMes := 20;
+
+param cantidadMinimaDesarrolladoresPorProyecto :=
+				N 22 E 15;
+
+param gananciaDiariaPorProyecto :=
+				N 25000 E 75000; 
+
+param consumoConexionesPorProyecto :=
+				N 1 E 2;
+
+param consumoAnchoDeBandaPorProyecto :=
+				N 1 E 3; 
+
+param consumoMemoriaRAMPorProyecto :=
+				N 8 E 10; 
+
+param consumoEspacioEnDiscoPorProyecto :=
+				N 2 E 1; 
