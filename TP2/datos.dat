@@ -3,27 +3,20 @@ data;
 
 set granos := T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12;
 
-param cantidadDesarrolladores := 48;
-param disponibilidadConexiones := 75;
-param disponibilidadAnchoDeBanda := 100;
-param disponibilidadMemoriaRam := 500;
-param disponibilidadEspacioDisco := 200;
-param diasHabilesPorMes := 20;
-
 param cantidadDisponiblePorTipo :=
-				T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12;
+				T1 30 T2 45 T3 25 T4 40 T5 20 T6 30 T7 75 T8 15 T9 16 T10 20 T11 10 T12 50;
 
-param gananciaDiariaPorProyecto :=
-				N 25000 E 75000; 
+param costoToneladaPorTipo :=
+				T1 145 T2 144 T3 145 T4 142 T5 138 T6 137 T7 137 T8 139 T9 127 T10 128 T11 117 T12 141; 
 
-param consumoConexionesPorProyecto :=
-				N 1 E 2;
+param humedadPorTipo :=
+				T1 12 T2 15 T3 12 T4 13 T5 15 T6 15 T7 18 T8 14 T9 17 T10 15 T11 22 T12 15;
 
-param consumoAnchoDeBandaPorProyecto :=
-				N 1 E 3; 
+param pesoPorTipo :=
+				T1 570 T2 570 T3 580 T4 560 T5 540 T6 550 T7 570 T8 580 T9 530 T10 550 T11 560 T12 570; 
 
-param consumoMemoriaRAMPorProyecto :=
-				N 8 E 10; 
+param porcentajeDanioPorTipo :=
+				T1 2 T2 2 T3 3 T4 4 T5 4 T6 5 T7 5 T8 2 T9 7 T10 8 T11 9 T12 3; 
 
-param consumoEspacioEnDiscoPorProyecto :=
-				N 2 E 1; 
+param porcentajeImpurezasPorTipo :=
+				T1 1.5 T2 1 T3 3 T4 2 T5 2 T6 3 T7 1 T8 4 T9 5 T10 3 T11 5 T12 2; 
