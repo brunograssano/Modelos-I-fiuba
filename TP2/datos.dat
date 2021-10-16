@@ -1,7 +1,7 @@
 #Datos
 data;
 
-set proyectos := N E;
+set granos := T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12;
 
 param cantidadDesarrolladores := 48;
 param disponibilidadConexiones := 75;
@@ -10,8 +10,8 @@ param disponibilidadMemoriaRam := 500;
 param disponibilidadEspacioDisco := 200;
 param diasHabilesPorMes := 20;
 
-param cantidadMinimaDesarrolladoresPorProyecto :=
-				N 22 E 15;
+param cantidadDisponiblePorTipo :=
+				T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12;
 
 param gananciaDiariaPorProyecto :=
 				N 25000 E 75000; 
