@@ -23,10 +23,14 @@ param porcentajeImpurezasPorTipo{i in granos};
 maximize z: (sum{j in granos}(sum{i in empresas} precioVentaPorEmpresa[i]*E[i,j])) - (sum{j in granos} G[j]* costoToneladaPorTipo[j]);
  
 #Restricciones
-#Mínima cantidad
-s.t. minimaCantidad{i in empresas}: sum{j in granos}E[i,j] >= cantidadMinimaPorEmpresa[i];
-#Máxima cantidad
-s.t. maximaCantidad{i in empresas}: sum{j in granos}E[i,j] <= cantidadMaximaPorEmpresa[i];
+#Relacion entre empresas y tipos de grano
+s.t. relacionEmpresaTiposGrano{j in granos}: G[j] = sum{i in empresas} E[i,j];
+#Mínima cantidad por empresa
+s.t. minimaCantidadPorEmpresa{i in empresas}: sum{j in granos}E[i,j] >= cantidadMinimaPorEmpresa[i];
+#Máxima cantidad por empresa
+s.t. maximaCantidadPorEmpresa{i in empresas}: sum{j in granos}E[i,j] <= cantidadMaximaPorEmpresa[i];
+#Máxima cantidad por tipo
+s.t. maximaCantidadPorTipo{j in granos}: G[j] <= cantidadDisponiblePorTipo[j];
 #Humedad
 s.t. humedad{i in empresas}: sum{j in granos}humedadPorTipo[j]*E[i,j] <= humedadPorEmpresa[i]*sum{j in granos}E[i,j];
 #Peso minimo
