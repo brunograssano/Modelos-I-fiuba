@@ -3,11 +3,11 @@ Rows:       43
 Columns:    48
 Non-zeros:  298
 Status:     OPTIMAL
-Objective:  z = 8738.488372 (MAXimum)
+Objective:  z = 8738488.372 (MAXimum)
 
    No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 z            B        8738.49                             
+     1 z            B    8.73849e+06                             
      2 relacionEmpresaTiposGrano[T1]
                     NS             0            -0             =          -200 
      3 relacionEmpresaTiposGrano[T2]
@@ -33,50 +33,50 @@ Objective:  z = 8738.488372 (MAXimum)
     13 relacionEmpresaTiposGrano[T12]
                     NS             0            -0             =          -141 
     14 minimaCantidadPorEmpresa[T]
-                    B             40            40               
+                    B          40000         40000               
     15 minimaCantidadPorEmpresa[M]
-                    B             36            32               
+                    B          36000         32000               
     16 minimaCantidadPorEmpresa[B]
-                    NL            50            50                         -10 
+                    NL         50000         50000                         -10 
     17 maximaCantidadPorEmpresa[T]
-                    B             40                          45 
+                    B          40000                       45000 
     18 maximaCantidadPorEmpresa[M]
-                    NU            36                          36       115.116 
+                    NU         36000                       36000       115.116 
     19 maximaCantidadPorEmpresa[B]
-                    B             50                          54 
+                    B          50000                       54000 
     20 maximaCantidadPorTipo[T1]
-                    NU            30                          30            55 
+                    NU         30000                       30000            55 
     21 maximaCantidadPorTipo[T2]
-                    NU            45                          45            56 
+                    NU         45000                       45000            56 
     22 maximaCantidadPorTipo[T3]
-                    B        1.34884                          25 
+                    B        1348.84                       25000 
     23 maximaCantidadPorTipo[T4]
-                    B              0                          40 
+                    B              0                       40000 
     24 maximaCantidadPorTipo[T5]
-                    NU            20                          20      0.465116 
+                    NU         20000                       20000      0.465116 
     25 maximaCantidadPorTipo[T6]
-                    B              0                          30 
+                    B              0                       30000 
     26 maximaCantidadPorTipo[T7]
-                    B              0                          75 
+                    B              0                       75000 
     27 maximaCantidadPorTipo[T8]
-                    NU            15                          15            61 
+                    NU         15000                       15000            61 
     28 maximaCantidadPorTipo[T9]
-                    B        11.0233                          16 
+                    B        11023.3                       16000 
     29 maximaCantidadPorTipo[T10]
-                    B         1.5814                          20 
+                    B         1581.4                       20000 
     30 maximaCantidadPorTipo[T11]
-                    B              0                          10 
+                    B              0                       10000 
     31 maximaCantidadPorTipo[T12]
-                    B        2.04651                          50 
-    32 humedad[T]   B       -18.3333                          -0 
+                    B        2046.51                       50000 
+    32 humedad[T]   B       -18333.3                          -0 
     33 humedad[M]   NU             0                          -0       1.44186 
-    34 humedad[B]   B       -6.66667                          -0 
+    34 humedad[B]   B       -6666.67                          -0 
     35 pesoMinimo[T]
-                    B        483.333            -0               
+                    B         483333            -0               
     36 pesoMinimo[M]
-                    B        20.9302            -0               
+                    B        20930.2            -0               
     37 pesoMinimo[B]
-                    B        566.667            -0               
+                    B         566667            -0               
     38 maximoDanio[T]
                     NU             0                          -0            59 
     39 maximoDanio[M]
@@ -88,24 +88,24 @@ Objective:  z = 8738.488372 (MAXimum)
     42 maximoImpurezas[M]
                     NU             0                          -0      0.325581 
     43 maximoImpurezas[B]
-                    B           -130                          -0 
+                    B        -130000                          -0 
 
    No. Column name  St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 E[T,T1]      B             30             0               
+     1 E[T,T1]      B          30000             0               
      2 E[M,T1]      NL             0             0                    -51.9767 
      3 E[B,T1]      NL             0             0                       < eps
-     4 E[T,T2]      B        1.66667             0               
+     4 E[T,T2]      B        1666.67             0               
      5 E[M,T2]      NL             0             0                    -56.1395 
-     6 E[B,T2]      B        43.3333             0               
+     6 E[B,T2]      B        43333.3             0               
      7 E[T,T3]      NL             0             0                          -4 
-     8 E[M,T3]      B        1.34884             0               
+     8 E[M,T3]      B        1348.84             0               
      9 E[B,T3]      NL             0             0                          -4 
     10 E[T,T4]      NL             0             0                         -60 
     11 E[M,T4]      NL             0             0                   -0.651163 
     12 E[B,T4]      NL             0             0                         -60 
     13 E[T,T5]      NL             0             0                    -56.4651 
-    14 E[M,T5]      B             20             0               
+    14 E[M,T5]      B          20000             0               
     15 E[B,T5]      NL             0             0                    -56.4651 
     16 E[T,T6]      NL             0             0                        -114 
     17 E[M,T6]      NL             0             0                    -1.39535 
@@ -113,38 +113,38 @@ Objective:  z = 8738.488372 (MAXimum)
     19 E[T,T7]      NL             0             0                        -114 
     20 E[M,T7]      NL             0             0                    -5.06977 
     21 E[B,T7]      NL             0             0                        -114 
-    22 E[T,T8]      B        8.33333             0               
+    22 E[T,T8]      B        8333.33             0               
     23 E[M,T8]      NL             0             0                    -55.6744 
-    24 E[B,T8]      B        6.66667             0               
+    24 E[B,T8]      B        6666.67             0               
     25 E[T,T9]      NL             0             0                        -222 
-    26 E[M,T9]      B        11.0233             0               
+    26 E[M,T9]      B        11023.3             0               
     27 E[B,T9]      NL             0             0                        -222 
     28 E[T,T10]     NL             0             0                        -282 
-    29 E[M,T10]     B         1.5814             0               
+    29 E[M,T10]     B         1581.4             0               
     30 E[B,T10]     NL             0             0                        -282 
     31 E[T,T11]     NL             0             0                        -330 
     32 E[M,T11]     NL             0             0                    -2.27907 
     33 E[B,T11]     NL             0             0                        -330 
     34 E[T,T12]     B              0             0               
-    35 E[M,T12]     B        2.04651             0               
+    35 E[M,T12]     B        2046.51             0               
     36 E[B,T12]     B              0             0               
-    37 G[T1]        B             30             0               
-    38 G[T2]        B             45             0               
-    39 G[T3]        B        1.34884             0               
+    37 G[T1]        B          30000             0               
+    38 G[T2]        B          45000             0               
+    39 G[T3]        B        1348.84             0               
     40 G[T4]        B              0             0               
-    41 G[T5]        B             20             0               
+    41 G[T5]        B          20000             0               
     42 G[T6]        B              0             0               
     43 G[T7]        B              0             0               
-    44 G[T8]        B             15             0               
-    45 G[T9]        B        11.0233             0               
-    46 G[T10]       B         1.5814             0               
+    44 G[T8]        B          15000             0               
+    45 G[T9]        B        11023.3             0               
+    46 G[T10]       B         1581.4             0               
     47 G[T11]       B              0             0               
-    48 G[T12]       B        2.04651             0               
+    48 G[T12]       B        2046.51             0               
 
 Karush-Kuhn-Tucker optimality conditions:
 
-KKT.PE: max.abs.err = 3.64e-12 on row 1
-        max.rel.err = 1.03e-16 on row 41
+KKT.PE: max.abs.err = 3.73e-09 on row 1
+        max.rel.err = 1.09e-16 on row 41
         High quality
 
 KKT.PB: max.abs.err = 0.00e+00 on row 0

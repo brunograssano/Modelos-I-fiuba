@@ -5,10 +5,10 @@ set granos := T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12;
 set empresas := T M B;
 
 param cantidadMinimaPorEmpresa :=
-				T 40 M 32 B 50;
+				T 40000 M 32000 B 50000;
 
 param cantidadMaximaPorEmpresa :=
-				T 45 M 36 B 54;
+				T 45000 M 36000 B 54000;
 
 param humedadPorEmpresa :=
 				T 13 M 15.5 B 15;
@@ -26,7 +26,7 @@ param precioVentaPorEmpresa :=
 				T 200 M 250 B 190;
 
 param cantidadDisponiblePorTipo :=
-				T1 30 T2 45 T3 25 T4 40 T5 20 T6 30 T7 75 T8 15 T9 16 T10 20 T11 10 T12 50;
+				T1 30000 T2 45000 T3 25000 T4 40000 T5 20000 T6 30000 T7 75000 T8 15000 T9 16000 T10 20000 T11 10000 T12 50000;
 
 param costoToneladaPorTipo :=
 				T1 145 T2 144 T3 145 T4 142 T5 138 T6 137 T7 137 T8 139 T9 127 T10 128 T11 117 T12 141; 
