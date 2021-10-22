@@ -1,7 +1,7 @@
-Problem:    tp2
-Rows:       43
-Columns:    48
-Non-zeros:  298
+Problem:    modelo
+Rows:       46
+Columns:    51
+Non-zeros:  304
 Status:     OPTIMAL
 Objective:  z = 8738488.372 (MAXimum)
 
@@ -38,56 +38,62 @@ Objective:  z = 8738488.372 (MAXimum)
                     B          36000         32000               
     16 minimaCantidadPorEmpresa[B]
                     NL         50000         50000                         -10 
-    17 maximaCantidadPorEmpresa[T]
+    17 sumaPesoPorEmpresa[T]
+                    NS             0            -0             =         < eps
+    18 sumaPesoPorEmpresa[M]
+                    NS             0            -0             =      -115.116 
+    19 sumaPesoPorEmpresa[B]
+                    NS             0            -0             =         < eps
+    20 maximaCantidadPorEmpresa[T]
                     B          40000                       45000 
-    18 maximaCantidadPorEmpresa[M]
+    21 maximaCantidadPorEmpresa[M]
                     NU         36000                       36000       115.116 
-    19 maximaCantidadPorEmpresa[B]
+    22 maximaCantidadPorEmpresa[B]
                     B          50000                       54000 
-    20 maximaCantidadPorTipo[T1]
+    23 maximaCantidadPorTipo[T1]
                     NU         30000                       30000            55 
-    21 maximaCantidadPorTipo[T2]
+    24 maximaCantidadPorTipo[T2]
                     NU         45000                       45000            56 
-    22 maximaCantidadPorTipo[T3]
+    25 maximaCantidadPorTipo[T3]
                     B        1348.84                       25000 
-    23 maximaCantidadPorTipo[T4]
+    26 maximaCantidadPorTipo[T4]
                     B              0                       40000 
-    24 maximaCantidadPorTipo[T5]
+    27 maximaCantidadPorTipo[T5]
                     NU         20000                       20000      0.465116 
-    25 maximaCantidadPorTipo[T6]
+    28 maximaCantidadPorTipo[T6]
                     B              0                       30000 
-    26 maximaCantidadPorTipo[T7]
+    29 maximaCantidadPorTipo[T7]
                     B              0                       75000 
-    27 maximaCantidadPorTipo[T8]
+    30 maximaCantidadPorTipo[T8]
                     NU         15000                       15000            61 
-    28 maximaCantidadPorTipo[T9]
+    31 maximaCantidadPorTipo[T9]
                     B        11023.3                       16000 
-    29 maximaCantidadPorTipo[T10]
+    32 maximaCantidadPorTipo[T10]
                     B         1581.4                       20000 
-    30 maximaCantidadPorTipo[T11]
+    33 maximaCantidadPorTipo[T11]
                     B              0                       10000 
-    31 maximaCantidadPorTipo[T12]
+    34 maximaCantidadPorTipo[T12]
                     B        2046.51                       50000 
-    32 humedad[T]   B       -18333.3                          -0 
-    33 humedad[M]   NU             0                          -0       1.44186 
-    34 humedad[B]   B       -6666.67                          -0 
-    35 pesoMinimo[T]
+    35 humedad[T]   B       -18333.3                          -0 
+    36 humedad[M]   NU             0                          -0       1.44186 
+    37 humedad[B]   B       -6666.67                          -0 
+    38 pesoMinimo[T]
                     B         483333            -0               
-    36 pesoMinimo[M]
+    39 pesoMinimo[M]
                     B        20930.2            -0               
-    37 pesoMinimo[B]
+    40 pesoMinimo[B]
                     B         566667            -0               
-    38 maximoDanio[T]
+    41 maximoDanio[T]
                     NU             0                          -0            59 
-    39 maximoDanio[M]
+    42 maximoDanio[M]
                     NU             0                          -0       2.53488 
-    40 maximoDanio[B]
+    43 maximoDanio[B]
                     NU             0                          -0            59 
-    41 maximoImpurezas[T]
+    44 maximoImpurezas[T]
                     NU             0                          -0         < eps
-    42 maximoImpurezas[M]
+    45 maximoImpurezas[M]
                     NU             0                          -0      0.325581 
-    43 maximoImpurezas[B]
+    46 maximoImpurezas[B]
                     B        -130000                          -0 
 
    No. Column name  St   Activity     Lower bound   Upper bound    Marginal
@@ -140,11 +146,14 @@ Objective:  z = 8738488.372 (MAXimum)
     46 G[T10]       B         1581.4             0               
     47 G[T11]       B              0             0               
     48 G[T12]       B        2046.51             0               
+    49 SUMAPESO[T]  B          40000             0               
+    50 SUMAPESO[M]  B          36000             0               
+    51 SUMAPESO[B]  B          50000             0               
 
 Karush-Kuhn-Tucker optimality conditions:
 
 KKT.PE: max.abs.err = 3.73e-09 on row 1
-        max.rel.err = 1.09e-16 on row 41
+        max.rel.err = 1.09e-16 on row 44
         High quality
 
 KKT.PB: max.abs.err = 0.00e+00 on row 0
