@@ -5,6 +5,7 @@ set empresas;
 #Variables
 var E{i in empresas,j in granos} >= 0;
 var G{i in granos} >= 0;
+var SUMAPESO{i in empresas}>=0;
 #Valores de datos;
 param cantidadMinimaPorEmpresa{i in empresas};
 param cantidadMaximaPorEmpresa{i in empresas};
@@ -25,18 +26,19 @@ maximize z: (sum{j in granos}(sum{i in empresas} precioVentaPorEmpresa[i]*E[i,j]
 #Restricciones
 #Relacion entre empresas y tipos de grano
 s.t. relacionEmpresaTiposGrano{j in granos}: G[j] = sum{i in empresas} E[i,j];
-#Mínima cantidad por empresa
+#MÃ­nima cantidad por empresa
 s.t. minimaCantidadPorEmpresa{i in empresas}: sum{j in granos}E[i,j] >= cantidadMinimaPorEmpresa[i];
-#Máxima cantidad por empresa
-s.t. maximaCantidadPorEmpresa{i in empresas}: sum{j in granos}E[i,j] <= cantidadMaximaPorEmpresa[i];
-#Máxima cantidad por tipo
+#MÃ¡xima cantidad por empresa
+s.t. sumaPesoPorEmpresa{i in empresas}: SUMAPESO[i] = sum{j in granos}E[i,j];
+s.t. maximaCantidadPorEmpresa{i in empresas}: SUMAPESO[i] <= cantidadMaximaPorEmpresa[i];
+#MÃ¡xima cantidad por tipo
 s.t. maximaCantidadPorTipo{j in granos}: G[j] <= cantidadDisponiblePorTipo[j];
 #Humedad
 s.t. humedad{i in empresas}: sum{j in granos}humedadPorTipo[j]*E[i,j] <= humedadPorEmpresa[i]*sum{j in granos}E[i,j];
 #Peso minimo
 s.t. pesoMinimo{i in empresas}: sum{j in granos}pesoPorTipo[j]*E[i,j] >= pesoPorEmpresa[i]*sum{j in granos}E[i,j];
-#Porcentaje de daño
+#Porcentaje de daÃ±o
 s.t. maximoDanio{i in empresas}: sum{j in granos}porcentajeDanioPorTipo[j]*E[i,j] <= porcentajeDanioPorEmpresa[i]*sum{j in granos}E[i,j];
-#Máximo impurezas
+#MÃ¡ximo impurezas
 s.t. maximoImpurezas{i in empresas}: sum{j in granos}porcentajeImpurezasPorTipo[j]*E[i,j] <= porcentajeImpurezasPorEmpresa[i]*sum{j in granos}E[i,j];
 end;
