@@ -1,0 +1,171 @@
+Problem:    tp2
+Rows:       46
+Columns:    51
+Non-zeros:  304
+Status:     UNDEFINED
+Objective:  z = 0 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 z            B              0                             
+     2 relacionEmpresaTiposGrano[T1]
+                    B              0            -0             = 
+     3 relacionEmpresaTiposGrano[T2]
+                    B              0            -0             = 
+     4 relacionEmpresaTiposGrano[T3]
+                    B              0            -0             = 
+     5 relacionEmpresaTiposGrano[T4]
+                    B              0            -0             = 
+     6 relacionEmpresaTiposGrano[T5]
+                    B              0            -0             = 
+     7 relacionEmpresaTiposGrano[T6]
+                    B              0            -0             = 
+     8 relacionEmpresaTiposGrano[T7]
+                    B              0            -0             = 
+     9 relacionEmpresaTiposGrano[T8]
+                    B              0            -0             = 
+    10 relacionEmpresaTiposGrano[T9]
+                    B              0            -0             = 
+    11 relacionEmpresaTiposGrano[T10]
+                    B              0            -0             = 
+    12 relacionEmpresaTiposGrano[T11]
+                    B              0            -0             = 
+    13 relacionEmpresaTiposGrano[T12]
+                    B              0            -0             = 
+    14 minimaCantidadPorEmpresa[T]
+                    B              0         40000               
+    15 minimaCantidadPorEmpresa[M]
+                    B              0         32000               
+    16 minimaCantidadPorEmpresa[B]
+                    B              0         50000               
+    17 sumaPesoPorEmpresa[T]
+                    B              0            -0             = 
+    18 sumaPesoPorEmpresa[M]
+                    B              0            -0             = 
+    19 sumaPesoPorEmpresa[B]
+                    B              0            -0             = 
+    20 maximaCantidadPorEmpresa[T]
+                    B              0                       45000 
+    21 maximaCantidadPorEmpresa[M]
+                    B              0                       36000 
+    22 maximaCantidadPorEmpresa[B]
+                    B              0                       54000 
+    23 maximaCantidadPorTipo[T1]
+                    B              0                       30000 
+    24 maximaCantidadPorTipo[T2]
+                    B              0                       40000 
+    25 maximaCantidadPorTipo[T3]
+                    B              0                       25000 
+    26 maximaCantidadPorTipo[T4]
+                    B              0                       40000 
+    27 maximaCantidadPorTipo[T5]
+                    B              0                       20000 
+    28 maximaCantidadPorTipo[T6]
+                    B              0                       30000 
+    29 maximaCantidadPorTipo[T7]
+                    B              0                       75000 
+    30 maximaCantidadPorTipo[T8]
+                    B              0                       15000 
+    31 maximaCantidadPorTipo[T9]
+                    B              0                       16000 
+    32 maximaCantidadPorTipo[T10]
+                    B              0                       20000 
+    33 maximaCantidadPorTipo[T11]
+                    B              0                       10000 
+    34 maximaCantidadPorTipo[T12]
+                    B              0                       50000 
+    35 humedad[T]   B              0                          -0 
+    36 humedad[M]   B              0                          -0 
+    37 humedad[B]   B              0                          -0 
+    38 pesoMinimo[T]
+                    B              0            -0               
+    39 pesoMinimo[M]
+                    B              0            -0               
+    40 pesoMinimo[B]
+                    B              0            -0               
+    41 maximoDanio[T]
+                    B              0                          -0 
+    42 maximoDanio[M]
+                    B              0                          -0 
+    43 maximoDanio[B]
+                    B              0                          -0 
+    44 maximoImpurezas[T]
+                    B              0                          -0 
+    45 maximoImpurezas[M]
+                    B              0                          -0 
+    46 maximoImpurezas[B]
+                    B              0                          -0 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 E[T,T1]      NL             0             0                       < eps
+     2 E[M,T1]      NL             0             0                       < eps
+     3 E[B,T1]      NL             0             0                       < eps
+     4 E[T,T2]      NL             0             0                       < eps
+     5 E[M,T2]      NL             0             0                       < eps
+     6 E[B,T2]      NL             0             0                       < eps
+     7 E[T,T3]      NL             0             0                       < eps
+     8 E[M,T3]      NL             0             0                       < eps
+     9 E[B,T3]      NL             0             0                       < eps
+    10 E[T,T4]      NL             0             0                       < eps
+    11 E[M,T4]      NL             0             0                       < eps
+    12 E[B,T4]      NL             0             0                       < eps
+    13 E[T,T5]      NL             0             0                       < eps
+    14 E[M,T5]      NL             0             0                       < eps
+    15 E[B,T5]      NL             0             0                       < eps
+    16 E[T,T6]      NL             0             0                       < eps
+    17 E[M,T6]      NL             0             0                       < eps
+    18 E[B,T6]      NL             0             0                       < eps
+    19 E[T,T7]      NL             0             0                       < eps
+    20 E[M,T7]      NL             0             0                       < eps
+    21 E[B,T7]      NL             0             0                       < eps
+    22 E[T,T8]      NL             0             0                       < eps
+    23 E[M,T8]      NL             0             0                       < eps
+    24 E[B,T8]      NL             0             0                       < eps
+    25 E[T,T9]      NL             0             0                       < eps
+    26 E[M,T9]      NL             0             0                       < eps
+    27 E[B,T9]      NL             0             0                       < eps
+    28 E[T,T10]     NL             0             0                       < eps
+    29 E[M,T10]     NL             0             0                       < eps
+    30 E[B,T10]     NL             0             0                       < eps
+    31 E[T,T11]     NL             0             0                       < eps
+    32 E[M,T11]     NL             0             0                       < eps
+    33 E[B,T11]     NL             0             0                       < eps
+    34 E[T,T12]     NL             0             0                       < eps
+    35 E[M,T12]     NL             0             0                       < eps
+    36 E[B,T12]     NL             0             0                       < eps
+    37 G[T1]        NL             0             0                       < eps
+    38 G[T2]        NL             0             0                       < eps
+    39 G[T3]        NL             0             0                       < eps
+    40 G[T4]        NL             0             0                       < eps
+    41 G[T5]        NL             0             0                       < eps
+    42 G[T6]        NL             0             0                       < eps
+    43 G[T7]        NL             0             0                       < eps
+    44 G[T8]        NL             0             0                       < eps
+    45 G[T9]        NL             0             0                       < eps
+    46 G[T10]       NL             0             0                       < eps
+    47 G[T11]       NL             0             0                       < eps
+    48 G[T12]       NL             0             0                       < eps
+    49 SUMAPESO[T]  NL             0             0                       < eps
+    50 SUMAPESO[M]  NL             0             0                       < eps
+    51 SUMAPESO[B]  NL             0             0                       < eps
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 5.00e+04 on row 16
+        max.rel.err = 1.00e+00 on row 16
+        PRIMAL SOLUTION IS INFEASIBLE
+
+KKT.DE: max.abs.err = 2.50e+02 on column 2
+        max.rel.err = 9.96e-01 on column 2
+        DUAL SOLUTION IS WRONG
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
