@@ -1,4 +1,4 @@
-Problem:    modelo
+Problem:    tp2
 Rows:       46
 Columns:    51
 Non-zeros:  304

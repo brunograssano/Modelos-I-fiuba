@@ -1,0 +1,422 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    tp2
+Objective:  z = 9110488.372 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 z            BS   9.11049e+06  -9.11049e+06          -Inf    9.10973e+06      -1.00000        .      E[M,T4]
+                                            .               +Inf    9.11049e+06          +Inf          +Inf
+
+     2 relacionEmpresaTiposGrano[T1]
+                    NS        .             .             .         -2000.00000          -Inf   9.49049e+06 maximaCantidadPorEmpresa[B]
+                                        -190.00000        .          2000.00000          +Inf   8.73049e+06 minimaCantidadPorEmpresa[B]
+
+     3 relacionEmpresaTiposGrano[T2]
+                    NS        .             .             .         -2000.00000          -Inf   9.49049e+06 maximaCantidadPorEmpresa[B]
+                                        -190.00000        .          2000.00000          +Inf   8.73049e+06 minimaCantidadPorEmpresa[B]
+
+     4 relacionEmpresaTiposGrano[T3]
+                    NS        .             .             .         -1348.83721          -Inf   9.30607e+06 G[T3]
+                                        -145.00000        .         23651.16279          +Inf   5.68107e+06 maximaCantidadPorTipo[T3]
+
+     5 relacionEmpresaTiposGrano[T4]
+                    NS        .             .             .              .               -Inf   9.11049e+06 G[T4]
+                                        -142.00000        .         40000.00000          +Inf   3.43049e+06 maximaCantidadPorTipo[T4]
+
+     6 relacionEmpresaTiposGrano[T5]
+                    NS        .             .             .          -769.23077          -Inf     9.217e+06 pesoMinimo[M]
+                                        -138.46512        .         20000.00000          +Inf   6.34119e+06 E[M,T5]
+
+     7 relacionEmpresaTiposGrano[T6]
+                    NS        .             .             .              .               -Inf   9.11049e+06 G[T6]
+                                        -137.00000        .         30000.00000          +Inf   5.00049e+06 maximaCantidadPorTipo[T6]
+
+     8 relacionEmpresaTiposGrano[T7]
+                    NS        .             .             .              .               -Inf   9.11049e+06 G[T7]
+                                        -137.00000        .         75000.00000          +Inf  -1.16451e+06 maximaCantidadPorTipo[T7]
+
+     9 relacionEmpresaTiposGrano[T8]
+                    NS        .             .             .         -2000.00000          -Inf   9.49049e+06 maximaCantidadPorEmpresa[B]
+                                        -190.00000        .          2000.00000          +Inf   8.73049e+06 minimaCantidadPorEmpresa[B]
+
+    10 relacionEmpresaTiposGrano[T9]
+                    NS        .             .             .        -11023.25581          -Inf   1.05104e+07 G[T9]
+                                        -127.00000        .          4976.74419          +Inf   8.47844e+06 maximaCantidadPorTipo[T9]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    tp2
+Objective:  z = 9110488.372 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 relacionEmpresaTiposGrano[T10]
+                    NS        .             .             .         -1581.39535          -Inf   9.31291e+06 G[T10]
+                                        -128.00000        .         18418.60465          +Inf   6.75291e+06 maximaCantidadPorTipo[T10]
+
+    12 relacionEmpresaTiposGrano[T11]
+                    NS        .             .             .              .               -Inf   9.11049e+06 G[T11]
+                                        -117.00000        .         10000.00000          +Inf   7.94049e+06 maximaCantidadPorTipo[T11]
+
+    13 relacionEmpresaTiposGrano[T12]
+                    NS        .             .             .         -2046.51163          -Inf   9.39905e+06 G[T12]
+                                        -141.00000        .         47953.48837          +Inf   2.34905e+06 maximaCantidadPorTipo[T12]
+
+    14 minimaCantidadPorEmpresa[T]
+                    BS   45000.00000   -5000.00000   40000.00000    43000.00000     -10.00000   8.66049e+06 maximaCantidadPorEmpresa[T]
+                                            .               +Inf    45000.00000          +Inf          +Inf
+
+    15 minimaCantidadPorEmpresa[M]
+                    BS   36000.00000   -4000.00000   32000.00000    34666.66667    -115.11628    4.9663e+06 maximaCantidadPorEmpresa[M]
+                                            .               +Inf    36000.00000          +Inf          +Inf
+
+    16 minimaCantidadPorEmpresa[B]
+                    BS   52000.00000   -2000.00000   50000.00000    51042.55319     -41.97674    6.9277e+06 E[M,T1]
+                                            .               +Inf    54000.00000      10.00000   9.63049e+06 maximaCantidadPorEmpresa[T]
+
+    17 sumaPesoPorEmpresa[T]
+                    NS        .             .             .         -2000.00000          -Inf   9.13049e+06 minimaCantidadPorEmpresa[B]
+                                         -10.00000        .          2000.00000          +Inf   9.09049e+06 maximaCantidadPorEmpresa[B]
+
+    18 sumaPesoPorEmpresa[M]
+                    NS        .             .             .        -18608.69565          -Inf   1.12527e+07 maximaCantidadPorTipo[T9]
+                                        -115.11628        .          1333.33333          +Inf     8.957e+06 pesoMinimo[M]
+
+    19 sumaPesoPorEmpresa[B]
+                    NS        .             .             .        -52000.00000          -Inf   9.11049e+06 SUMAPESO[B]
+                                            .             .          2000.00000          +Inf   9.11049e+06 maximaCantidadPorEmpresa[B]
+
+    20 maximaCantidadPorEmpresa[T]
+                    NU   45000.00000        .               -Inf    43000.00000     -10.00000   9.09049e+06 maximaCantidadPorEmpresa[B]
+                                          10.00000   45000.00000    47000.00000          +Inf   9.13049e+06 minimaCantidadPorEmpresa[B]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    tp2
+Objective:  z = 9110488.372 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 maximaCantidadPorEmpresa[M]
+                    NU   36000.00000        .               -Inf    34666.66667    -115.11628     8.957e+06 pesoMinimo[M]
+                                         115.11628   36000.00000    54608.69565          +Inf   1.12527e+07 maximaCantidadPorTipo[T9]
+
+    22 maximaCantidadPorEmpresa[B]
+                    BS   52000.00000    2000.00000          -Inf    51042.55319     -41.97674    6.9277e+06 E[M,T1]
+                                            .        54000.00000    57000.00000      10.00000   9.63049e+06 maximaCantidadPorEmpresa[T]
+
+    23 maximaCantidadPorTipo[T1]
+                    NU   30000.00000        .               -Inf    28000.00000     -45.00000   9.02049e+06 minimaCantidadPorEmpresa[B]
+                                          45.00000   30000.00000    32000.00000          +Inf   9.20049e+06 maximaCantidadPorEmpresa[B]
+
+    24 maximaCantidadPorTipo[T2]
+                    NU   52000.00000        .               -Inf    50000.00000     -46.00000   9.01849e+06 minimaCantidadPorEmpresa[B]
+                                          46.00000   52000.00000    54000.00000          +Inf   9.20249e+06 maximaCantidadPorEmpresa[B]
+
+    25 maximaCantidadPorTipo[T3]
+                    BS    1348.83721   23651.16279          -Inf      805.19481      -1.40000    9.1086e+06 E[M,T4]
+                                            .        25000.00000     4526.31579       1.66102   9.11273e+06 E[M,T11]
+
+    26 maximaCantidadPorTipo[T4]
+                    BS        .        40000.00000          -Inf         .               -Inf   9.11049e+06
+                                            .        40000.00000     1168.83117        .65116   9.11049e+06 E[M,T4]
+
+    27 maximaCantidadPorTipo[T5]
+                    NU   20000.00000        .               -Inf         .            -.46512   9.10119e+06 E[M,T5]
+                                            .46512   20000.00000    20769.23077          +Inf   9.11085e+06 pesoMinimo[M]
+
+    28 maximaCantidadPorTipo[T6]
+                    BS        .        30000.00000          -Inf         .               -Inf   9.11049e+06
+                                            .        30000.00000     2500.00000       1.39535   9.11049e+06 E[M,T6]
+
+    29 maximaCantidadPorTipo[T7]
+                    BS        .        75000.00000          -Inf         .               -Inf   9.11049e+06
+                                            .        75000.00000     1189.18919       5.06977   9.11049e+06 E[M,T7]
+
+    30 maximaCantidadPorTipo[T8]
+                    NU   15000.00000        .               -Inf    13000.00000     -51.00000   9.00849e+06 minimaCantidadPorEmpresa[B]
+                                          51.00000   15000.00000    17000.00000          +Inf   9.21249e+06 maximaCantidadPorEmpresa[B]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    tp2
+Objective:  z = 9110488.372 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    31 maximaCantidadPorTipo[T9]
+                    BS   11023.25581    4976.74419          -Inf     9000.00000       -.93333    9.1002e+06 maximoImpurezas[M]
+                                            .        16000.00000    11376.62338       2.15385   9.13423e+06 E[M,T4]
+
+    32 maximaCantidadPorTipo[T10]
+                    BS    1581.39535   18418.60465          -Inf     1064.93506      -1.47368   9.10816e+06 E[M,T4]
+                                            .        20000.00000     3200.00000       1.16667   9.11233e+06 maximoImpurezas[M]
+
+    33 maximaCantidadPorTipo[T11]
+                    BS        .        10000.00000          -Inf         .               -Inf   9.11049e+06
+                                            .        10000.00000     2315.78947       2.27907   9.11049e+06 E[M,T11]
+
+    34 maximaCantidadPorTipo[T12]
+                    BS    2046.51163   47953.48837          -Inf     1584.41558      -1.64706   9.10712e+06 E[M,T4]
+                                            .        50000.00000    19255.81395        .54054   9.11159e+06 maximaCantidadPorTipo[T5]
+
+    35 humedad[T]   BS  -10000.00000   10000.00000          -Inf   -10000.00000      -1.50000   9.12549e+06 E[T,T3]
+                                            .             .         75000.00000        .        9.11049e+06 E[B,T1]
+
+    36 humedad[M]   NU        .             .               -Inf    -8800.00000      -1.44186    9.0978e+06 E[M,T12]
+                                           1.44186        .          3913.04348          +Inf   9.11613e+06 pesoMinimo[M]
+
+    37 humedad[B]   BS   -5000.00000    5000.00000          -Inf   -15000.00000        .        9.11049e+06 E[B,T1]
+                                            .             .         -5000.00000      31.33333   8.95382e+06 E[B,T7]
+
+    38 pesoMinimo[T]
+                    BS  550000.00000 -550000.00000        .        450000.00000        .        9.11049e+06 maximoImpurezas[T]
+                                            .               +Inf   555882.35294        .        9.11049e+06 E[B,T1]
+
+    39 pesoMinimo[M]
+                    BS   20930.23256  -20930.23256        .        -31000.00000       -.03636   9.10973e+06 E[M,T4]
+                                            .               +Inf   565116.27907        .01709   9.11085e+06 maximaCantidadPorTipo[T5]
+
+    40 pesoMinimo[B]
+                    BS  570000.00000 -570000.00000        .        564117.64706        .        9.11049e+06 E[B,T1]
+                                            .               +Inf   670000.00000        .        9.11049e+06 maximoImpurezas[T]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   5
+
+Problem:    tp2
+Objective:  z = 9110488.372 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    41 maximoDanio[T]
+                    NU        .             .               -Inf         .          -49.00000   9.11049e+06 E[T,T12]
+                                          49.00000        .          2000.00000          +Inf   9.20849e+06 maximaCantidadPorEmpresa[B]
+
+    42 maximoDanio[M]
+                    NU        .             .               -Inf    -6181.81818      -2.53488   9.09482e+06 E[M,T10]
+                                           2.53488        .          7500.00000          +Inf    9.1295e+06 pesoMinimo[M]
+
+    43 maximoDanio[B]
+                    NU        .             .               -Inf         .          -49.00000   9.11049e+06 E[B,T12]
+                                          49.00000        .          2000.00000          +Inf   9.20849e+06 maximaCantidadPorEmpresa[B]
+
+    44 maximoImpurezas[T]
+                    NU        .             .               -Inf   -30000.00000        .        9.11049e+06 humedad[T]
+                                            .             .         15000.00000          +Inf   9.11049e+06 humedad[B]
+
+    45 maximoImpurezas[M]
+                    NU        .             .               -Inf    -5800.00000       -.32558    9.1086e+06 E[M,T3]
+                                            .32558        .          3461.53846          +Inf   9.11162e+06 pesoMinimo[M]
+
+    46 maximoImpurezas[B]
+                    BS -141000.00000  141000.00000          -Inf  -145000.00000      -5.00000   9.81549e+06 maximaCantidadPorEmpresa[T]
+                                            .             .       -111000.00000        .        9.11049e+06 maximoImpurezas[T]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   6
+
+Problem:    tp2
+Objective:  z = 9110488.372 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 E[T,T1]      BS   30000.00000     200.00000        .         26470.58824     200.00000   9.11049e+06 E[B,T1]
+                                            .               +Inf    30000.00000          +Inf          +Inf
+
+     2 E[M,T1]      NL        .          250.00000        .         -2000.00000          -Inf   9.19444e+06 maximaCantidadPorEmpresa[B]
+                                         -41.97674          +Inf      957.44681     291.97674    9.0703e+06 pesoMinimo[M]
+
+     3 E[B,T1]      NL        .          190.00000        .         -1764.70588          -Inf   9.11049e+06 humedad[B]
+                                            .               +Inf     3529.41176     190.00000   9.11049e+06 humedad[T]
+
+     4 E[T,T2]      BS    5000.00000     200.00000        .          3666.66667     185.00000   9.03549e+06 maximaCantidadPorEmpresa[T]
+                                            .               +Inf     7941.17647     200.00000   9.11049e+06 E[B,T1]
+
+     5 E[M,T2]      NL        .          250.00000        .         -2000.00000          -Inf   9.20277e+06 maximaCantidadPorEmpresa[B]
+                                         -46.13953          +Inf     1419.35484     296.13953     9.045e+06 E[M,T12]
+
+     6 E[B,T2]      BS   47000.00000     190.00000        .         44058.82353     190.00000   9.11049e+06 E[B,T1]
+                                            .               +Inf    48333.33333     205.00000   9.81549e+06 maximaCantidadPorEmpresa[T]
+
+     7 E[T,T3]      NL        .          200.00000        .         -1348.83721          -Inf   9.11588e+06 G[T3]
+                                          -4.00000          +Inf         .          204.00000   9.11049e+06 E[T,T12]
+
+     8 E[M,T3]      BS    1348.83721     250.00000        .           805.19481     248.60000    9.1086e+06 E[M,T4]
+                                            .               +Inf     4526.31579     251.66102   9.11273e+06 E[M,T11]
+
+     9 E[B,T3]      NL        .          190.00000        .         -1348.83721          -Inf   9.11588e+06 G[T3]
+                                          -4.00000          +Inf         .          194.00000   9.11049e+06 E[B,T12]
+
+    10 E[T,T4]      NL        .          200.00000        .              .               -Inf   9.11049e+06 G[T4]
+                                         -50.00000          +Inf         .          250.00000   9.11049e+06 E[T,T12]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   7
+
+Problem:    tp2
+Objective:  z = 9110488.372 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 E[M,T4]      NL        .          250.00000        .              .               -Inf   9.11049e+06 G[T4]
+                                           -.65116          +Inf     1168.83117     250.65116   9.10973e+06 pesoMinimo[M]
+
+    12 E[B,T4]      NL        .          190.00000        .              .               -Inf   9.11049e+06 G[T4]
+                                         -50.00000          +Inf         .          240.00000   9.11049e+06 E[B,T12]
+
+    13 E[T,T5]      NL        .          200.00000        .          -769.23077          -Inf   9.14623e+06 pesoMinimo[M]
+                                         -46.46512          +Inf         .          246.46512   9.11049e+06 E[T,T12]
+
+    14 E[M,T5]      BS   20000.00000     250.00000        .              .          249.53488   9.10119e+06 maximaCantidadPorTipo[T5]
+                                            .               +Inf    20000.00000          +Inf          +Inf
+
+    15 E[B,T5]      NL        .          190.00000        .          -769.23077          -Inf   9.14623e+06 pesoMinimo[M]
+                                         -46.46512          +Inf         .          236.46512   9.11049e+06 E[B,T12]
+
+    16 E[T,T6]      NL        .          200.00000        .              .               -Inf   9.11049e+06 G[T6]
+                                         -94.00000          +Inf         .          294.00000   9.11049e+06 E[T,T12]
+
+    17 E[M,T6]      NL        .          250.00000        .              .               -Inf   9.11049e+06 G[T6]
+                                          -1.39535          +Inf     2500.00000     251.39535     9.107e+06 pesoMinimo[M]
+
+    18 E[B,T6]      NL        .          190.00000        .              .               -Inf   9.11049e+06 G[T6]
+                                         -94.00000          +Inf         .          284.00000   9.11049e+06 E[B,T12]
+
+    19 E[T,T7]      NL        .          200.00000        .              .               -Inf   9.11049e+06 G[T7]
+                                         -94.00000          +Inf         .          294.00000   9.11049e+06 E[T,T12]
+
+    20 E[M,T7]      NL        .          250.00000        .              .               -Inf   9.11049e+06 G[T7]
+                                          -5.06977          +Inf     1189.18919     255.06977   9.10446e+06 E[M,T12]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   8
+
+Problem:    tp2
+Objective:  z = 9110488.372 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 E[B,T7]      NL        .          190.00000        .              .               -Inf   9.11049e+06 G[T7]
+                                         -94.00000          +Inf         .          284.00000   9.11049e+06 E[B,T12]
+
+    22 E[T,T8]      BS   10000.00000     200.00000        .              .          200.00000   9.11049e+06 maximoImpurezas[T]
+                                            .               +Inf    10588.23529     200.00000   9.11049e+06 E[B,T1]
+
+    23 E[M,T8]      NL        .          250.00000        .         -1500.00000          -Inf     9.179e+06 pesoMinimo[M]
+                                         -45.67442          +Inf     1757.57576     295.67442   9.03021e+06 E[M,T3]
+
+    24 E[B,T8]      BS    5000.00000     190.00000        .          4411.76471     190.00000   9.11049e+06 E[B,T1]
+                                            .               +Inf    15000.00000     190.00000   9.11049e+06 maximoImpurezas[T]
+
+    25 E[T,T9]      NL        .          200.00000        .          -500.00000          -Inf   9.20149e+06 maximaCantidadPorEmpresa[B]
+                                        -182.00000          +Inf         .          382.00000   9.11049e+06 E[T,T12]
+
+    26 E[M,T9]      BS   11023.25581     250.00000        .          9000.00000     249.06667    9.1002e+06 maximoImpurezas[M]
+                                            .               +Inf    11376.62338     252.15385   9.13423e+06 E[M,T4]
+
+    27 E[B,T9]      NL        .          190.00000        .          -500.00000          -Inf   9.20149e+06 maximaCantidadPorEmpresa[B]
+                                        -182.00000          +Inf         .          372.00000   9.11049e+06 E[B,T12]
+
+    28 E[T,T10]     NL        .          200.00000        .          -400.00000          -Inf   9.20329e+06 maximaCantidadPorEmpresa[B]
+                                        -232.00000          +Inf         .          432.00000   9.11049e+06 E[T,T12]
+
+    29 E[M,T10]     BS    1581.39535     250.00000        .          1064.93506     248.52632   9.10816e+06 E[M,T4]
+                                            .               +Inf     3200.00000     251.16667   9.11233e+06 maximoImpurezas[M]
+
+    30 E[B,T10]     NL        .          190.00000        .          -400.00000          -Inf   9.20329e+06 maximaCantidadPorEmpresa[B]
+                                        -232.00000          +Inf         .          422.00000   9.11049e+06 E[B,T12]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   9
+
+Problem:    tp2
+Objective:  z = 9110488.372 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    31 E[T,T11]     NL        .          200.00000        .              .               -Inf   9.11049e+06 G[T11]
+                                        -270.00000          +Inf         .          470.00000   9.11049e+06 E[T,T12]
+
+    32 E[M,T11]     NL        .          250.00000        .              .               -Inf   9.11049e+06 G[T11]
+                                          -2.27907          +Inf     2315.78947     252.27907   9.10521e+06 E[M,T12]
+
+    33 E[B,T11]     NL        .          190.00000        .              .               -Inf   9.11049e+06 G[T11]
+                                        -270.00000          +Inf         .          460.00000   9.11049e+06 E[B,T12]
+
+    34 E[T,T12]     BS        .          200.00000        .         -2046.51163     196.00000   9.11049e+06 E[T,T3]
+                                            .               +Inf         .               +Inf   9.11049e+06
+
+    35 E[M,T12]     BS    2046.51163     250.00000        .          1584.41558     248.35294   9.10712e+06 E[M,T4]
+                                            .               +Inf    19255.81395     250.54054   9.11159e+06 maximaCantidadPorTipo[T5]
+
+    36 E[B,T12]     BS        .          190.00000        .         -2046.51163     186.00000   9.11049e+06 E[B,T3]
+                                            .               +Inf         .               +Inf   9.11049e+06
+
+    37 G[T1]        BS   30000.00000    -145.00000        .         28000.00000    -190.00000   7.76049e+06 maximaCantidadPorTipo[T1]
+                                            .               +Inf    30000.00000          +Inf          +Inf
+
+    38 G[T2]        BS   52000.00000    -144.00000        .         50000.00000    -190.00000   6.71849e+06 maximaCantidadPorTipo[T2]
+                                            .               +Inf    52000.00000          +Inf          +Inf
+
+    39 G[T3]        BS    1348.83721    -145.00000        .           805.19481    -146.40000    9.1086e+06 E[M,T4]
+                                            .               +Inf     4526.31579    -143.33898   9.11273e+06 E[M,T11]
+
+    40 G[T4]        BS        .         -142.00000        .              .               -Inf   9.11049e+06
+                                            .               +Inf     1168.83117    -141.34884   9.11049e+06 E[M,T4]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  10
+
+Problem:    tp2
+Objective:  z = 9110488.372 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    41 G[T5]        BS   20000.00000    -138.00000        .              .         -138.46512   9.10119e+06 maximaCantidadPorTipo[T5]
+                                            .               +Inf    20000.00000          +Inf          +Inf
+
+    42 G[T6]        BS        .         -137.00000        .              .               -Inf   9.11049e+06
+                                            .               +Inf     2500.00000    -135.60465   9.11049e+06 E[M,T6]
+
+    43 G[T7]        BS        .         -137.00000        .              .               -Inf   9.11049e+06
+                                            .               +Inf     1189.18919    -131.93023   9.11049e+06 E[M,T7]
+
+    44 G[T8]        BS   15000.00000    -139.00000        .         13000.00000    -190.00000   8.34549e+06 maximaCantidadPorTipo[T8]
+                                            .               +Inf    15000.00000          +Inf          +Inf
+
+    45 G[T9]        BS   11023.25581    -127.00000        .          9000.00000    -127.93333    9.1002e+06 maximoImpurezas[M]
+                                            .               +Inf    11376.62338    -124.84615   9.13423e+06 E[M,T4]
+
+    46 G[T10]       BS    1581.39535    -128.00000        .          1064.93506    -129.47368   9.10816e+06 E[M,T4]
+                                            .               +Inf     3200.00000    -126.83333   9.11233e+06 maximoImpurezas[M]
+
+    47 G[T11]       BS        .         -117.00000        .              .               -Inf   9.11049e+06
+                                            .               +Inf     2315.78947    -114.72093   9.11049e+06 E[M,T11]
+
+    48 G[T12]       BS    2046.51163    -141.00000        .          1584.41558    -142.64706   9.10712e+06 E[M,T4]
+                                            .               +Inf    19255.81395    -140.45946   9.11159e+06 maximaCantidadPorTipo[T5]
+
+    49 SUMAPESO[T]  BS   45000.00000        .             .         43000.00000     -10.00000   8.66049e+06 maximaCantidadPorEmpresa[T]
+                                            .               +Inf    45000.00000          +Inf          +Inf
+
+    50 SUMAPESO[M]  BS   36000.00000        .             .         34666.66667    -115.11628    4.9663e+06 maximaCantidadPorEmpresa[M]
+                                            .               +Inf    36000.00000          +Inf          +Inf
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  11
+
+Problem:    tp2
+Objective:  z = 9110488.372 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    51 SUMAPESO[B]  BS   52000.00000        .             .         51042.55319     -41.97674    6.9277e+06 E[M,T1]
+                                            .               +Inf    54000.00000      10.00000   9.63049e+06 maximaCantidadPorEmpresa[T]
+
+End of report
